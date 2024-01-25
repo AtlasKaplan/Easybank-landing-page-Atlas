@@ -11,6 +11,8 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
 }
 
 img,
@@ -46,5 +48,26 @@ h6 {
 
 
 
-/* //////////////////////////////////// */
+/* ///////////////R O O T///////////////////// */
 
+:root{
+    --drk-blue: hsl(233, 26%, 24%);
+    --green:hsl(136, 65%, 51%);
+    --lgt-blue:hsl(192, 70%, 51%);
+
+    --grey-blue: hsl(233, 8%, 62%);
+    --lght-grey-blue: hsl(220, 16%, 96%);
+    --very-lght-gray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+}
+
+nav{
+
+}
+
+main{
+
+}
+footer{
+    background-color: var(--drk-blue);
+}
