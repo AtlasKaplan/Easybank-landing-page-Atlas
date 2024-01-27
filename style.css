@@ -62,7 +62,15 @@ h6 {
 }
 
 nav{
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 5rem;
+}
+.nav-links>a{
+    text-decoration: none;
+    color: var(--grey-blue);
+    margin-right: 1.5rem;
 }
 
 main{
