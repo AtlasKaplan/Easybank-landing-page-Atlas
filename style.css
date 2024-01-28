@@ -59,13 +59,18 @@ h6 {
     --lght-grey-blue: hsl(220, 16%, 96%);
     --very-lght-gray: hsl(0, 0%, 98%);
     --white: hsl(0, 0%, 100%);
+
+    --radiant-bg: 
 }
 
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 1rem 5rem;
+    margin: 1.25rem 2rem;
+    z-index: 10;
+    min-width: 310px;
+    /* max-width: 676px; */
 }
 .nav-links>a{
     text-decoration: none;
@@ -74,8 +79,68 @@ nav{
 }
 
 main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 390px;
+    margin-inline: auto;
+    min-width: 375px;
+}
+.hero{
+    display: flex;
+    flex-direction: column-reverse;
+    z-index: -10;
+    overflow: hidden;
+    padding-bottom:2.5rem ;
+}
+.hero-img{
+    position: relative;
+    height: 22.5rem;
+    display: flex;
+    justify-content: center;
+}
+.hero-img>img{
+    position: absolute;
+}
+.mockups{
+    top: -120px;
+}
+
+.hero-info{
+    margin: 0 2rem;
+}
+.hero-info>p{
+    font-size: 0.919rem;
+    color: var(--grey-blue);
+    margin-top: 1rem;
+    font-weight: 100;
+}
+.hero-button{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+h1{
+    color: var(--drk-blue);
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+button{
+    background-image: linear-gradient(90deg,
+            hsl(136deg 65% 51%) 0%,
+            hsl(164deg 68% 51%) 50%,
+            hsl(192deg 70% 51%) 100%);
+    border: none;
+    color: var(--lght-grey-blue);
+    border-radius: 25px;
+    padding: 0.55rem 1.70rem;
+    font-size: 0.95rem;
 
 }
+
 footer{
     background-color: var(--drk-blue);
 }
